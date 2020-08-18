@@ -23,7 +23,7 @@ def demo(request):
             now = int(time.time())
             ts = time.localtime(now)
             t = str(ts.tm_year)+str(ts.tm_mon).zfill(2)+str(ts.tm_mday).zfill(2)
-            route = 'D:\\data\\2020\\0817\\0000\\video\\'
+            route = '/files/'
             file = t + '_' + myFile.name
             destination = open(os.path.join(route,file),'wb+')
 
